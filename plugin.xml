@@ -1,7 +1,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-        id="@globules-io/cordova-plugin-google-age"
+        id="@globules-io/cordova-plugin-google-play-age"
         version="0.0.1">
-     <name>cordova-plugin-google-age</name>
+     <name>cordova-plugin-google-play-age</name>
      <description>Cordova plugin for Google Play Age Signals API (Android)</description>
      <license>MIT</license>
      <keywords>cordova,age,signals,google,play</keywords>
@@ -15,6 +15,6 @@
           </config-file>
      </platform>
      <js-module src="www/AgeSignals.js" name="AgeSignals">
-          <clobbers target="cordova.plugins.google.age" />
+          <clobbers target="cordova.plugins.google.play.age" />
      </js-module>
 </plugin>
