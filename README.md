@@ -2,11 +2,30 @@
 Google Play Age Signals Cordova Plugin
 https://developer.android.com/google/play/age-signals/use-age-signals-api
 
-Add the plugin 
+### Add the plugin 
 > cordova plugin add @globules-io/cordova-plugin-google-play-age
 
-Remove the plugin 
+### Remove the plugin 
 > cordova plugin rm @globules-io/cordova-plugin-google-play-age
+
+### Usage
+    cordova.plugins.agesignals.checkAgeSignals(
+        function(result) {
+            console.log('Age Status:', result.userStatus); // e.g., "VERIFIED"
+            if (result.userStatus === 'SUPERVISED_APPROVAL_DENIED') {
+                // Handle denial, e.g., restrict access
+            }
+            // Use ageLower/ageUpper for supervised users
+        },
+        function(error) {
+            var code = parseInt(error);
+            // Handle errors (see table below)
+            if (code === -9) {
+                alert('Please install the app from Google Play.');
+            }
+        }
+    );
+
 
 ## Response Codes
 > Values for userStatus
