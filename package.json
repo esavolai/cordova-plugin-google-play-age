@@ -1,0 +1,23 @@
+{
+     "name": "cordova-plugin-google-age",
+     "version": "0.0.1",
+     "description": "Cordova plugin for Google Age Signals",
+     "author": {
+          "name": "Globules.io"
+     },
+     "license": "MIT",
+     "repository": {
+          "type": "git",
+          "url": "https://github.com/globules-io/cordova-plugin-google-play-age"
+     },
+     "cordova": {
+          "id": "cordova-plugin-google-play-age",
+          "platforms": [
+               "android"
+          ]
+     },
+     "keywords": [
+          "ecosystem:cordova",
+          "cordova-android"
+     ]
+}
