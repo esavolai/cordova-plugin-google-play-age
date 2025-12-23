@@ -14,7 +14,7 @@
                </feature>
           </config-file>
      </platform>
-     <js-module src="www/AgeSignals.js" name="AgeSignals">
+     <js-module src="www/AgeSignalsPlugin.js" name="AgeSignals">
           <clobbers target="cordova.plugins.google.play.age" />
      </js-module>
 </plugin>
