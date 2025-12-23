@@ -12,7 +12,7 @@ import androidx.annotation.NonNull;
 import com.google.android.play.agesignals.AgeSignalsManager;
 import com.google.android.play.agesignals.AgeSignalsManagerFactory;
 import com.google.android.play.agesignals.AgeSignalsRequest;
-import com.google.android.play.agesignals.AgeSignalsVerificationStatus;
+import com.google.android.play.agesignals.model.AgeSignalsVerificationStatus;
 import com.google.android.play.agesignals.AgeSignalsResult;
 
 public class AgeSignalsPlugin extends CordovaPlugin {
@@ -27,7 +27,7 @@ public class AgeSignalsPlugin extends CordovaPlugin {
     }
 
     private void checkAgeSignals(CallbackContext callbackContext) {
-        Context context = cordova.getApplicationContext();
+        Context context = this.cordova.getActivity().getApplicationContext();
         AgeSignalsManager manager = AgeSignalsManagerFactory.create(context);
 
         manager.checkAgeSignals(AgeSignalsRequest.builder().build())
