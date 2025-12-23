@@ -6,7 +6,7 @@
      <license>MIT</license>
      <keywords>cordova,age,signals,google,play</keywords>
      <platform name="android">
-          <framework src="com.google.android.play:age-signals:0.0.1-beta01" type="gradleReference" />
+          <framework src="com.google.android.play:age-signals:0.0.2" type="gradleReference" />
           <source-file src="src/android/AgeSignalsPlugin.java" target-dir="io/globules/agesignals" />
           <config-file target="res/xml/config.xml" parent="/*">
                <feature name="AgeSignals">
