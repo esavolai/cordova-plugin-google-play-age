@@ -1,9 +1,9 @@
-var exec = require('cordova/exec');
+var exec = require("cordova/exec");
 
 var AgeSignals = {
-    checkAgeSignals: function(successCallback, errorCallback) {
-        exec(successCallback, errorCallback, 'AgeSignalsPlugin', 'checkAgeSignals', []);
-    }
+    checkAgeSignals: function(testNumber, successCallback, errorCallback) {
+        exec(successCallback, errorCallback, "AgeSignalsPlugin", "checkAgeSignals", [ testNumber ]);
+    },
 };
 
 module.exports = AgeSignals;
