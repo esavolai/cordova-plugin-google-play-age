@@ -11,7 +11,7 @@
           <engine name="cordova" version=">=10.0.0" />
      </engines>
      <platform name="android">
-          <framework src="com.google.android.play:age-signals:0.0.2" type="gradleReference" />
+          <framework src="com.google.android.play:age-signals:0.0.3" type="gradleReference" />
           <source-file src="src/android/AgeSignalsPlugin.java" target-dir="io/globules/agesignals" />
           <config-file target="res/xml/config.xml" parent="/*">
                <feature name="AgeSignalsPlugin">
