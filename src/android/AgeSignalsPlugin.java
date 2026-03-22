@@ -87,6 +87,24 @@ public class AgeSignalsPlugin extends CordovaPlugin {
 
             case 3:
                 /* 
+                        simulated response for a supervised user between 13 and 17 years old with all 
+                        significant changes approved up to and including the significant change that 
+                        was effective from 2025-02-01
+                */
+                fakeUser = AgeSignalsResult.builder()
+                    .setUserStatus(AgeSignalsVerificationStatus.SUPERVISED)
+                    .setAgeLower(13)
+                    .setAgeUpper(17)
+                    .setMostRecentApprovalDate(
+                        Date.from(LocalDate.of(2025, 3, 14).atStartOfDay(ZoneOffset.UTC).toInstant())
+                    )
+                    .setInstallId(fakeInstallId)
+                    .build();
+                manager.setNextAgeSignalsResult(fakeUser);
+                break;
+
+            case 4:
+                /* 
                         simulated response for a declared user with a custom age range of 13 to 15
                 */
                 fakeUser = AgeSignalsResult.builder()
@@ -98,7 +116,7 @@ public class AgeSignalsPlugin extends CordovaPlugin {
                 manager.setNextAgeSignalsResult(fakeUser);
                 break;
 
-            case 4:
+            case 5:
                 /*
                         simulated response for a pending significant change approval for a supervised 
                         user between 13 and 17 years old with no previous significant change 
@@ -113,7 +131,7 @@ public class AgeSignalsPlugin extends CordovaPlugin {
                 manager.setNextAgeSignalsResult(fakeUser);
                 break;
 
-            case 5:
+            case 6:
                 /*
                         simulated response for a pending significant change approval for a supervised
                         user between 13 and 17 years old with all significant changes approved up to 
@@ -131,7 +149,7 @@ public class AgeSignalsPlugin extends CordovaPlugin {
                 manager.setNextAgeSignalsResult(fakeUser);
                 break;
 
-            case 6:
+            case 7:
                 /*
                         simulated response for a supervised user between 13 and 17 years old with all 
                         significant changes approved up to and including the significant change that 
@@ -149,7 +167,7 @@ public class AgeSignalsPlugin extends CordovaPlugin {
                 manager.setNextAgeSignalsResult(fakeUser);
                 break;
 
-            case 7:
+            case 8:
                 /*
                         simulated response for an unknown user status
                 */
@@ -159,7 +177,7 @@ public class AgeSignalsPlugin extends CordovaPlugin {
                 manager.setNextAgeSignalsResult(fakeUser);
                 break;
 
-            case 8:
+            case 9:
                 /*
                         simulated response for a null user status value
                 */
@@ -169,7 +187,7 @@ public class AgeSignalsPlugin extends CordovaPlugin {
                 manager.setNextAgeSignalsResult(fakeUser);
                 break;
 
-            case 9:
+            case 10:
                 /*
                         simulated response for a network error code
                 */
