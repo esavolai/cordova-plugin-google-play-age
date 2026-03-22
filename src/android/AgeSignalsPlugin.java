@@ -89,14 +89,14 @@ public class AgeSignalsPlugin extends CordovaPlugin {
                 /* 
                         simulated response for a supervised user between 13 and 17 years old with all 
                         significant changes approved up to and including the significant change that 
-                        was effective from 2025-02-01
+                        was effective from 2026-02-01
                 */
                 fakeUser = AgeSignalsResult.builder()
                     .setUserStatus(AgeSignalsVerificationStatus.SUPERVISED)
                     .setAgeLower(13)
                     .setAgeUpper(17)
                     .setMostRecentApprovalDate(
-                        Date.from(LocalDate.of(2025, 3, 14).atStartOfDay(ZoneOffset.UTC).toInstant())
+                        Date.from(LocalDate.of(2026, 3, 14).atStartOfDay(ZoneOffset.UTC).toInstant())
                     )
                     .setInstallId(fakeInstallId)
                     .build();
@@ -135,14 +135,14 @@ public class AgeSignalsPlugin extends CordovaPlugin {
                 /*
                         simulated response for a pending significant change approval for a supervised
                         user between 13 and 17 years old with all significant changes approved up to 
-                        and including the significant change that was effective from 2025-03-01
+                        and including the significant change that was effective from 2026-03-01
                 */
                 fakeUser = AgeSignalsResult.builder()
                     .setUserStatus(AgeSignalsVerificationStatus.SUPERVISED_APPROVAL_PENDING)
                     .setAgeLower(13)
                     .setAgeUpper(17)
                     .setMostRecentApprovalDate(
-                        Date.from(LocalDate.of(2025, 3, 1).atStartOfDay(ZoneOffset.UTC).toInstant())
+                        Date.from(LocalDate.of(2026, 3, 1).atStartOfDay(ZoneOffset.UTC).toInstant())
                     )
                     .setInstallId(fakeInstallId)
                     .build();
@@ -153,14 +153,14 @@ public class AgeSignalsPlugin extends CordovaPlugin {
                 /*
                         simulated response for a supervised user between 13 and 17 years old with all 
                         significant changes approved up to and including the significant change that 
-                        was effective from 2025-02-01
+                        was effective from 2026-02-01
                 */
                 fakeUser = AgeSignalsResult.builder()
                     .setUserStatus(AgeSignalsVerificationStatus.SUPERVISED_APPROVAL_DENIED)
                     .setAgeLower(13)
                     .setAgeUpper(17)
                     .setMostRecentApprovalDate(
-                        Date.from(LocalDate.of(2025, 3, 1).atStartOfDay(ZoneOffset.UTC).toInstant())
+                        Date.from(LocalDate.of(2026, 3, 1).atStartOfDay(ZoneOffset.UTC).toInstant())
                     )
                     .setInstallId(fakeInstallId)
                     .build();
