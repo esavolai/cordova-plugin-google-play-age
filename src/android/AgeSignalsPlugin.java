@@ -179,16 +179,6 @@ public class AgeSignalsPlugin extends CordovaPlugin {
 
             case 9:
                 /*
-                        simulated response for a null user status value
-                */
-                fakeUser = AgeSignalsResult.builder()
-                    .setUserStatus(null)
-                    .build();
-                manager.setNextAgeSignalsResult(fakeUser);
-                break;
-
-            case 10:
-                /*
                         simulated response for a network error code
                 */
                 manager.setNextAgeSignalsException(
