@@ -89,7 +89,7 @@ public class AgeSignalsPlugin extends CordovaPlugin {
                 /* 
                         simulated response for a supervised user between 13 and 17 years old with all 
                         significant changes approved up to and including the significant change that 
-                        was effective from 2026-02-01
+                        was effective from 2026-03-14
                 */
                 fakeUser = AgeSignalsResult.builder()
                     .setUserStatus(AgeSignalsVerificationStatus.SUPERVISED)
@@ -153,7 +153,7 @@ public class AgeSignalsPlugin extends CordovaPlugin {
                 /*
                         simulated response for a supervised user between 13 and 17 years old with all 
                         significant changes approved up to and including the significant change that 
-                        was effective from 2026-02-01
+                        was effective from 2026-03-01
                 */
                 fakeUser = AgeSignalsResult.builder()
                     .setUserStatus(AgeSignalsVerificationStatus.SUPERVISED_APPROVAL_DENIED)
