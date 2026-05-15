@@ -215,7 +215,7 @@ public class AgeSignalsPlugin extends CordovaPlugin {
             response.put("ageLower", result.ageLower() == null ? JSONObject.NULL : result.ageLower());
             response.put("ageUpper", result.ageLower() == null ? JSONObject.NULL : result.ageUpper());
             response.put("mostRecentApprovalDate", result.mostRecentApprovalDate() == null ? JSONObject.NULL : result.mostRecentApprovalDate());
-            response.put("installId", result.intallId() == null ? JSONObject.NULL : result.installId());
+            response.put("installId", result.installId() == null ? JSONObject.NULL : result.installId());
             PluginResult pluginResult = new PluginResult(Status.OK, response);
             pluginResult.setKeepCallback(true);
             context.sendPluginResult(pluginResult);
