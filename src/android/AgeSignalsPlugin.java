@@ -211,11 +211,11 @@ public class AgeSignalsPlugin extends CordovaPlugin {
         JSONObject response = new JSONObject();
         try {
             Log.d(TAG, "check returned: " + result.toString());
-            response.put("userStatus", result.userStatus());
-            response.put("ageLower", result.ageLower());
-            response.put("ageUpper", result.ageUpper());
-            response.put("mostRecentApprovalDate", result.mostRecentApprovalDate());
-            response.put("installId", result.installId());
+            response.put("userStatus", result.userStatus() == null ? JSONObject.NULL : result.userStatus());
+            response.put("ageLower", result.ageLower() == null ? JSONObject.NULL : result.ageLower());
+            response.put("ageUpper", result.ageLower() == null ? JSONObject.NULL : result.ageUpper());
+            response.put("mostRecentApprovalDate", result.mostRecentApprovalDate() == null ? JSONObject.NULL : result.mostRecentApprovalDate());
+            response.put("installId", result.intallId() == null ? JSONObject.NULL : result.installId());
             PluginResult pluginResult = new PluginResult(Status.OK, response);
             pluginResult.setKeepCallback(true);
             context.sendPluginResult(pluginResult);
